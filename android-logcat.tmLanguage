@@ -5,7 +5,7 @@
 	<key>fileTypes</key>
 	<array/>
 	<key>name</key>
-	<string>logcat (cts host)</string>
+	<string>Android logcat</string>
 	<key>patterns</key>
 	<array>
 		<dict>
@@ -41,36 +41,11 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>constant.numeric.logcat.line</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.date</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.time</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.logcat.type</string>
-						</dict>
-						<key>5</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.tag.logcat.tag</string>
-						</dict>
-						<key>6</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.logcat.msg</string>
+							<string>android.logcat.debug</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(?x)^ (?:\s*(\d+:)\s*)? ([\d-]+)\s+([\d:.]+)\s+ ([D])/(.*?):\s+ (.*) $</string>
+					<string>(.+\s[D]\/.(.*?):\s+.+)$</string>
 					<key>name</key>
 					<string>meta.logcat.line.debug</string>
 				</dict>
@@ -86,31 +61,11 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>constant.numeric.logcat.line</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.date</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.time</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>invalid.illegal.logcat.type</string>
-						</dict>
-						<key>5</key>
-						<dict>
-							<key>name</key>
-							<string>invalid.illegal.logcat.msg</string>
+							<string>android.logcat.error</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(?x)^ (?:\s*(\d+:)\s*)? ([\d-]+)\s+([\d:.]+)\s+ ([EF])/(.*?):\s+ (.*) $</string>
+					<string>(.+\s[E]\/.(.*?):\s+.+)$</string>
 					<key>name</key>
 					<string>meta.logcat.line.error</string>
 				</dict>
@@ -126,36 +81,11 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>constant.numeric.logcat.line</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.date</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.time</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.class.logcat.type</string>
-						</dict>
-						<key>5</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.tag.logcat.tag</string>
-						</dict>
-						<key>6</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.class.logcat.msg</string>
+							<string>android.logcat.info</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(?x)^ (?:\s*(\d+:)\s*)? ([\d-]+)\s+([\d:.]+)\s+ ([I])/(.*?):\s+ (.*) $</string>
+					<string>(.+\s[I]\/.(.*?):\s+.+)$</string>
 					<key>name</key>
 					<string>meta.logcat.line.info</string>
 				</dict>
@@ -171,36 +101,11 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>constant.numeric.logcat.line</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.date</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.time</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>comment.logcat.type</string>
-						</dict>
-						<key>5</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.tag.logcat.tag</string>
-						</dict>
-						<key>6</key>
-						<dict>
-							<key>name</key>
-							<string>comment.logcat.msg</string>
+							<string>android.logcat.verbose</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(?x)^ (?:\s*(\d+:)\s*)? ([\d-]+)\s+([\d:.]+)\s+ ([V])/(.*?):\s+ (.*) $</string>
+					<string>(.+\s[V]\/.(.*?):\s+.+)$</string>
 					<key>name</key>
 					<string>meta.logcat.line.verbose</string>
 				</dict>
@@ -216,36 +121,11 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>constant.numeric.logcat.line</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.date</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>string.logcat.timestamp.time</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.logcat.type</string>
-						</dict>
-						<key>5</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.tag.logcat.tag</string>
-						</dict>
-						<key>6</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.logcat.msg</string>
+							<string>android.logcat.warning</string>
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(?x)^ (?:\s*(\d+:)\s*)? ([\d-]+)\s+([\d:.]+)\s+ ([W])/(.*?):\s+ (.*) $</string>
+					<string>(.+\s[W]\/.(.*?):\s+.+)$</string>
 					<key>name</key>
 					<string>meta.logcat.line.warn</string>
 				</dict>
