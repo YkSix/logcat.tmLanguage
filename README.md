@@ -1,8 +1,8 @@
 # android-logcat.tmLanguage
 
-Colorize log to let you focus on the important things.  
-Above all, colors make debugging more efficient and make me happy.
-It supports all header configurations in Android Studio logcat viewer.
+* Colorize log to let you focus on the important things.  
+* Above all, colors make debugging more efficient and make me happy.
+* It supports all header configurations in Android Studio logcat viewer.
 
 ![](screenshots/android_studio_logcat_header.jpg)
 
